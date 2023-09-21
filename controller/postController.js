@@ -180,23 +180,3 @@ exports.getPosts = catchAsync(async (req, res, next) => {
     },
   });
 });
-
-/* 
-exports.getUserTweets = catchAsync(async (req, res, next) => {
-  const filter = {};
-
-  const user = await User.findOne({ username: req.params.username });
-  filter.user = user._id;
-
-  const tweets = await Tweet.find(filter).sort({
-    _id: -1,
-  });
-  res.status(200).json({
-    status: "success",
-    result: tweets.length,
-    tweets,
-  });
-});
-
-
- */
