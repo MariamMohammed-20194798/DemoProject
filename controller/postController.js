@@ -5,11 +5,6 @@ const User = require("./../model/userModel");
 const AppError = require("./../utils/appError");
 const catchAsync = require("./../utils/catchAsync");
 
-cloudinary.config({
-  cloud_name: "dwjot1zhy",
-  api_key: "562937548765246",
-  api_secret: "XlZxwlVoZndfWq3OUNP58rpHXZM",
-});
 
 const multerStorage = multer.diskStorage({
   destination: (req, file, cb) => {
